@@ -1,11 +1,8 @@
 name: CI Demo
 
 on:
-    pull_request:
-        branches:
-            - main
-            - develop
-        types: [opened, reopened]
+    push:
+        branches: [main]
 
 jobs:
     build:
